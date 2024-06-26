@@ -14,4 +14,4 @@ app.use(routes_1.default);
 app.listen(porta, () => {
     console.log('Servidor funcionando na porta ', porta);
 });
-exports.default = app;
+export default  app;
