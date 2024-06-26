@@ -11,7 +11,10 @@ const port = process.env.PORT || 9000;
 const porta = parseInt(port);
 app.use(express_1.default.json());
 app.use(routes_1.default);
+routes_1.default.get('/', (req, res) => {
+    return res.status(200).send('Seja Bem-vindo(a)');
+});
 app.listen(porta, () => {
     console.log('Servidor funcionando na porta ', porta);
 });
-export default  app;
+exports.default = app;
