@@ -6,5 +6,8 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const express_1 = require("express");
 const router = (0, express_1.Router)();
 const teste_1 = __importDefault(require("../controllers/teste"));
+router.get('/', (req, res) => {
+    return res.status(200).send('Seja Bem-vindo(a)');
+});
 router.get('/minhaRota', teste_1.default);
 exports.default = router;
