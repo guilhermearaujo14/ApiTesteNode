@@ -11,7 +11,7 @@ const port = process.env.PORT || 9000;
 const porta = parseInt(port);
 app.use(express_1.default.json());
 app.use('/api', routes_1.default);
-app.listen(port, () => {
+app.listen(porta, () => {
     console.log('Servidor funcionando na porta ', porta);
 });
 exports.default = app;
